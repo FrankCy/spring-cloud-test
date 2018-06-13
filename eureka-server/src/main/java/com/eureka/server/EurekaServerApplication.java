@@ -1,5 +1,7 @@
-import org.springframework.boot.SpringApplication;
+package com.eureka.server;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
@@ -7,16 +9,17 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * @description：
  * @author: Yang.Chang
  * @project: spring-cloud-test
- * @package: PACKAGE_NAME
+ * @package: com.eureka.server
  * @email: cy880708@163.com
- * @date: 2018/6/8 下午5:08
+ * @date: 2018/6/13 下午3:19
  * @mofified By:
  */
-@SpringBootApplication()
 @EnableEurekaServer
-public class EurekaServerStart {
+@SpringBootApplication
+public class EurekaServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServerStart.class, args);
+        new SpringApplicationBuilder(EurekaServerApplication.class).web(true).run(args);
     }
+
 }
