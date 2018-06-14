@@ -8,4 +8,6 @@ logs
 *.classpath
 *.log*
 .DS_Store
-*.yml
+mvnw
+*.cmd
+*.jar
