@@ -1,0 +1,13 @@
+spring:
+  application:
+     name: eureka-cluster-discovery
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/  #将服务同时注册到多个注册中心
+
+server:
+  port: 8082
+
+
