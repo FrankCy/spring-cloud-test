@@ -4,4 +4,4 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka     #服务注册到8762的eureka服务上
+      defaultZone: http://localhost:8761/eureka     #服务注册到8761的eureka服务上
