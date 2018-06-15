@@ -16,6 +16,8 @@ public class Test {
 
     private String info;
 
+    private String httpAddress;
+
     public Integer getId() {
         return id;
     }
@@ -30,5 +32,13 @@ public class Test {
 
     public void setInfo(String info) {
         this.info = info;
+    }
+
+    public String getHttpAddress() {
+        return httpAddress;
+    }
+
+    public void setHttpAddress(String httpAddress) {
+        this.httpAddress = httpAddress;
     }
 }

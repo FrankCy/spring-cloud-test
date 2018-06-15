@@ -1,4 +1,4 @@
-# Frank Spring-Cloud Test #
+# Spring-Cloud Test #
 ** 项目用于练习Spring-Cloud 各组件 **
 
 
@@ -14,6 +14,8 @@ Eureka + Ribbon 基础
 Eureka 集群 
 - eureka-cluster-server:注册中心
 - eureka-cluster-server-copy:注册中心副本
+- eureka-cluster-discovery:Eureka客户端
+- eureka-cluster-discovery-copy:Eureka客户端副本
 
 **作者：常扬
 

@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @version 1.0
  * @description：
@@ -23,10 +25,11 @@ public class TestProvider {
     @RequestMapping(value = "/call/{id}",
     method = RequestMethod.GET,
     produces = MediaType.APPLICATION_JSON_VALUE)
-    public Test getTest(@PathVariable Integer id) {
+    public Test getTest(@PathVariable Integer id, HttpServletRequest httpServletRequest) {
         Test test = new Test();
         test.setId(id);
         test.setInfo("测试信息 Provider");
+        test.setHttpAddress(httpServletRequest.getRequestURL().toString());
         return test;
     }
 
