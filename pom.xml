@@ -12,5 +12,12 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-discovery</module>
+        <module>eureka-ribbon</module>
+        <module>eureka-cluster-server</module>
+        <module>eureka-cluster-server-copy</module>
+        <module>eureka-cluster-discovery</module>
+        <module>eureka-cluster-discovery-copy</module>
+        <module>eureka-cluster-ribbon</module>
+        <module>eureka-cluster-client</module>
     </modules>
 </project>
