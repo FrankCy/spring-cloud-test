@@ -1,4 +1,4 @@
-# Spring-Cloud Test #
+# Spring-Cloud #
 ** 项目用于练习Spring-Cloud 各组件 **
 
 
@@ -9,7 +9,7 @@ Eureka + Ribbon 基础
 - eureka-discovery:服务提供者
 - eureka-controller:服务调用者
 
-### ---------------------------------------------------------------------------- ##
+### ----------------------------------------------------------------------------
 
 Eureka 集群 
 - 1 eureka-cluster-server:注册中心
@@ -20,6 +20,6 @@ Eureka 集群
 - 6 eureka-cluster-client:HttpClient请求端
 - (依次按顺序启动即可)
 
-**作者：常扬
+**实现：常扬
 
 **邮箱：cy880708@163.com
